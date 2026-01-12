@@ -1,29 +1,11 @@
-# Descrición
+# IA AVANZADA SIMPLE NAVIGATION
 
-Emprega este arquivo para describir os cambios do teu proxecto.
+En la estructura **Geometry** modifique una de las puertas para que quedase como si fuese una 
+pequeña abertura al nivel de suelo.
+Hice una copia del GameObject **HumanoidAgent** y modifique su tamaño a uno mucho mas pequeño.
+Luego creé un nuevo Agent llamado **Rat** modificando sus **Radius,Height y StepHeight** para que adecuen
+al tamaño del gameObject , tambien creé una nueva Area llamada **SoloRat**.
 
-Utiliza o formato en markdown coas marcas básicas que aparcen no seguinte exemplo:
-
-# Título principal
-## Subtítulo
-
-Texto normal con **negriña** e *cursiva*.
-
-- Lista 1
-- Lista 2
-
-[Ligazón](https://exemplo.com)
-
-
-```csharp
-using UnityEngine;
-
-public class OlaMundo : MonoBehaviour
-{
-    void Start()
-    {
-        Debug.Log("Ola, mundo desde C#!");
-    }
-}
-
-```
+Una vez echo esto dentro del Objecto **Geometry** añadi un nuevo **NavMesh Surface** al cual añadi el agente **Rat**
+y seleccione que el Area por Defecto para dicho agente sea **Solo Rat** para asegurarme que solo el gameObject con el agente **Rat**
+pueda pasar por debajo de la abertura.
